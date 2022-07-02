@@ -1,0 +1,14 @@
+hugo server \
+    --gc \
+    --disableFastRender \
+    --templateMetrics \
+    --printI18nWarnings \
+    --templateMetricsHints \
+    --printPathWarnings \
+    --buildFuture \
+    --enableGitInfo \
+    --log true --logFile hugo.log \
+    --verbose \
+    --verboseLog \
+    --bind 100.88.130.127 \
+    --baseURL http://code.chrisshort.net

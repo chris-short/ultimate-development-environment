@@ -1,0 +1,11 @@
+# Refer to the Caddy docs for more information:
+# https://caddyserver.com/docs/caddyfile
+#
+# code-server
+#
+code.chrisshort.net {
+	reverse_proxy 127.0.0.1:8080
+	tls <EMAIL> {
+		dns <PROVIDER> {env.<PROVIDER>_AUTH_TOKEN}
+	}
+}
